@@ -172,6 +172,8 @@ PB9  constant DBG   \ DEBUG pin (for DEBUG only, not part of SWD protocol)
   OMODE-pp CLK IO-MODE!
   OMODE-pp RST IO-MODE!
   OMODE-pp DBG IO-MODE!
+  72Mhz
+  1000 systick-hz
   
   sw.reset $79 >sw $E7 >sw sw.reset
   8 0 do idle loop
